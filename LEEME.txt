@@ -1,0 +1,18 @@
+PÁGINA PERSONAL DE FABRICIO MUÑOZ
+
+ARCHIVOS:
+- index.html: estructura de la página.
+- estilos.css: colores y diseño.
+- imagenes/fabricio.jpg: fotografía que enviaste.
+- video/presentacion.mp4: nuevo video que enviaste, comprimido para que cargue más rápido.
+
+PARA VERLA:
+1. Abre esta carpeta en Visual Studio Code.
+2. Abre index.html.
+3. Usa Live Server o abre index.html en tu navegador.
+
+MÚSICA:
+La sección usa el reproductor oficial de Spotify de Bad Bunny. Necesita conexión a internet y, según la canción, puede pedir iniciar sesión.
+
+VIDEO:
+El reproductor muestra el video que enviaste. Este archivo conserva tu grabación original; no es un video generado por IA.

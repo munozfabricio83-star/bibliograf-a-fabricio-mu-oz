@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --blue: #2499e8;
+  --blue-dark: #173d68;
+  --ink: #303030;
+  --pale-blue: #d9ebff;
+  --pale-green: #e5f7e8;
+  --paper: #ffffff;
+  --page: #f4f4f4;
+  --muted: #707782;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--page);
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+.hero {
+  width: min(1100px, calc(100% - 36px));
+  margin: 22px auto 18px;
+  padding: 42px 22px;
+  border-radius: 17px;
+  color: white;
+  text-align: center;
+  background: var(--blue);
+}
+.hero-inner { max-width: 800px; margin: auto; }
+.eyebrow { margin: 0 0 7px; font-size: 12px; font-weight: 900; letter-spacing: 3px; }
+.hero h1 { margin: 0; font-size: clamp(36px, 6vw, 56px); line-height: 1.12; font-weight: 900; }
+.welcome { margin: 20px 0 0; font-size: clamp(19px, 3vw, 29px); }
+.menu {
+  width: min(1100px, calc(100% - 36px));
+  margin: 0 auto 26px;
+  padding: 23px 18px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 32px;
+  border-radius: 16px;
+  background: #303030;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 900;
+  padding: 4px 8px;
+}
+.menu a:hover { color: #a9d8ff; }
+main { width: min(1100px, calc(100% - 36px)); margin: 0 auto 40px; }
+.card {
+  background: var(--paper);
+  border: 1px solid #dedede;
+  border-radius: 17px;
+  padding: clamp(22px, 4vw, 42px);
+  box-shadow: 0 2px 0 rgba(0,0,0,.02);
+}
+.bio {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 32px;
+  align-items: center;
+  background: var(--pale-blue);
+  border-color: #b9d9f7;
+}
+.blue { color: var(--blue-dark); }
+h2 {
+  color: var(--blue-dark);
+  font-size: clamp(27px, 4vw, 38px);
+  line-height: 1.2;
+  margin: 0 0 20px;
+  text-align: center;
+  font-weight: 900;
+}
+.bio h2 { text-align: left; }
+.bio p { font-size: 18px; margin: 0 0 14px; }
+.bio-photo img {
+  display: block;
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  object-position: center 35%;
+  border: 6px solid var(--blue);
+  border-radius: 15px;
+}
+.photos-section, .music-section, .video-section {
+  margin-top: 28px;
+  padding: 28px;
+  border-radius: 18px;
+}
+.photos-section, .video-section { background: var(--pale-green); }
+.music-section { background: #edf3fb; }
+.photo-card, .music-card, .video-card { max-width: 850px; margin: auto; text-align: center; }
+.main-photo {
+  display: block;
+  width: min(100%, 540px);
+  max-height: 580px;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: center 35%;
+  border: 6px solid var(--blue);
+  border-radius: 15px;
+}
+.muted { color: var(--muted); margin-bottom: 0; }
+.spotify-wrap { max-width: 650px; margin: 22px auto 0; overflow: hidden; border-radius: 13px; }
+.spotify-wrap iframe { display: block; border: 0; border-radius: 13px; }
+.small { font-size: 13px; }
+.video-card video {
+  display: block;
+  width: min(100%, 620px);
+  max-height: 780px;
+  margin: 20px auto 0;
+  background: #151515;
+  border-radius: 14px;
+}
+.contact {
+  margin-top: 28px;
+  text-align: center;
+  color: white;
+  background: #555555;
+  border: 0;
+}
+.contact h2 { color: white; }
+.contact p { margin: 7px 0; }
+.email a, .top-link { color: #d8edff; font-weight: 900; }
+.top-link { display: inline-block; margin-top: 12px; }
+footer {
+  padding: 30px 18px;
+  text-align: center;
+  color: white;
+  background: #555555;
+}
+footer p { margin: 8px 0; }
+.social-title { font-size: 25px; font-weight: 900; }
+.socials { font-size: 20px; font-weight: 900; }
+.socials span { padding: 0 5px; color: #d8edff; }
+@media (max-width: 760px) {
+  .bio { grid-template-columns: 1fr; }
+  .bio-photo { max-width: 470px; margin: 0 auto; }
+  .menu { gap: 7px 15px; }
+  .menu a { font-size: 18px; }
+  .photos-section, .music-section, .video-section { padding: 14px; }
+  .card { padding: 23px; }
+}

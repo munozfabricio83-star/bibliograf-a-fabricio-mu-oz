@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página personal de Fabricio Muñoz, estudiante de Sistemas de Información.">
+  <title>Fabricio Muñoz | Mi página personal</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <div class="hero-inner">
+      <p class="eyebrow">MI ESPACIO PERSONAL</p>
+      <h1>Fabricio Muñoz</h1>
+      <p class="welcome">Bienvenidos a mi página personal</p>
+    </div>
+  </header>
+
+  <nav class="menu" aria-label="Menú principal">
+    <a href="#biografia">Biografía</a>
+    <a href="#fotos">Fotos</a>
+    <a href="#musica">Música</a>
+    <a href="#video">Video</a>
+  </nav>
+
+  <main>
+    <section class="bio card" id="biografia">
+      <div class="bio-copy">
+        <p class="eyebrow blue">SOBRE MÍ</p>
+        <h2>Biografía</h2>
+        <p>Mi nombre es <strong>Fabricio Muñoz</strong> y soy estudiante de la carrera de <strong>Sistemas de Información</strong>. Me considero una persona que busca aprender cosas nuevas, superar retos y seguir creciendo tanto en lo personal como en lo académico.</p>
+        <p>Elegí esta carrera porque me interesa la tecnología y cómo los sistemas informáticos ayudan a resolver problemas. Quiero aprender sobre programación, desarrollo web, redes y manejo de información para prepararme y tener un buen futuro profesional.</p>
+        <p>En mi tiempo libre también disfruto jugar fútbol, compartir con mis amigos y escuchar música.</p>
+      </div>
+      <div class="bio-photo">
+        <img src="imagenes/fabricio.jpg" alt="Fotografía de Fabricio Muñoz">
+      </div>
+    </section>
+
+    <section class="photos-section" id="fotos">
+      <article class="card photo-card">
+        <h2>Mi fotografía</h2>
+        <img class="main-photo" src="imagenes/fabricio.jpg" alt="Fabricio Muñoz">
+        <p class="muted">Una fotografía personal.</p>
+      </article>
+    </section>
+
+    <section class="music-section" id="musica">
+      <article class="card music-card">
+        <h2>Mi música favorita</h2>
+        <p>Uno de los artistas que me gusta escuchar es <strong>Bad Bunny</strong>.</p>
+        <div class="spotify-wrap">
+          <iframe
+            title="Música de Bad Bunny en Spotify"
+            src="https://open.spotify.com/embed/artist/4q3ewBCX7sLwd24euuV69X?utm_source=generator"
+            width="100%" height="352" frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+        </div>
+        <p class="muted small">El reproductor oficial de Spotify puede pedirte iniciar sesión para reproducir algunas canciones.</p>
+      </article>
+    </section>
+
+    <section class="video-section" id="video">
+      <article class="card video-card">
+        <h2>Mi video</h2>
+        <p>En este video me presento y comparto por qué elegí estudiar Sistemas de Información.</p>
+        <video controls playsinline preload="metadata" poster="imagenes/fabricio.jpg">
+          <source src="video/presentacion.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+      </article>
+    </section>
+
+    <section class="contact card">
+      <h2>Gracias por visitar mi página</h2>
+      <p>Fabricio Muñoz · Estudiante de Sistemas de Información</p>
+      <p class="email">Escríbeme: <a href="mailto:bmunoz883@fafi.utb.edu.ec">bmunoz883@fafi.utb.edu.ec</a></p>
+      <a class="top-link" href="#inicio">Volver al inicio ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <p class="social-title">Redes Sociales</p>
+    <p class="socials">Facebook <span>|</span> Instagram <span>|</span> TikTok</p>
+    <p>© 2026 - Fabricio Muñoz</p>
+  </footer>
+</body>
+</html>
